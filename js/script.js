@@ -16,7 +16,7 @@ const paperButton = document.querySelector('paper-button');
 const scissorsButton = document.querySelector('scissors-button');
 
 let count = 0;
-// const image = document.createElement('img');
+const image = document.createElement('img');
 
 //set counters to zero
 userNumber.textContent = count;
@@ -24,7 +24,7 @@ computerNumber.textContent = count;
 
 //create image reusable function
 const createImage = (src, alt) => {
-  const image = document.createElement('img');
+  // const image = document.createElement('img');
   image.src = src;
   image.alt = alt;
   return toggleImage.appendChild(image);
@@ -55,12 +55,18 @@ choiceButton.forEach((button) => {
 
 //reset counter & remove images
 resetButton.addEventListener('click', () => {
-  pointsCounter.forEach((counter) => {
-    counter.textContent = 0;
-    toggleImage.setAttribute('class', 'remove-image');
-    // ImageSection.removeChild(toggleImage);
-  });
+  userNumber.textContent = 0;
+  computerNumber.textContent = 0;
+  toggleImage.setAttribute('class', 'remove-image');
 });
+
+// resetButton.addEventListener('click', () => {
+//   pointsCounter.forEach((counter) => {
+//     counter.textContent = 0;
+//     toggleImage.setAttribute('class', 'remove-image');
+//     // ImageSection.removeChild(toggleImage);
+//   });
+// });
 
 // console.log(rockButton);
 

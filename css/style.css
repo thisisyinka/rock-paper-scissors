@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #510000;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.main {
+  padding: 30px;
+}
+
+.content {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.user,
+.computer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+.number {
+  font-size: 40px;
+}
+
+.choices,
+.images {
+  margin-top: 150px;
+}
+
+.choices-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.first-choice,
+.second-choice,
+.third-choice {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rock-button,
+.paper-button,
+.scissors-button {
+  align-items: center;
+  background-color: #ffd600;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  display: flex;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  height: 62px;
+  justify-content: center;
+  width: 120px;
+}
+
+.rock-button:hover,
+.paper-button:hover,
+.scissors-button:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.reset-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.reset {
+  align-items: center;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  height: 62px;
+  justify-content: center;
+  width: 120px;
+}
+
+.reset:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ff0000;
+}
+
+.reset:active,
+.paper-button:active,
+.rock-button:active,
+.scissors-button:active {
+  box-shadow: 0px -1px 65px -17px rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0px -1px 65px -17px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0px -1px 65px -17px rgba(0, 0, 0, 0.3) inset;
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-image {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .choices-content {
+    flex-direction: row;
+  }
+}

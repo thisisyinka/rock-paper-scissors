@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Simple Rock, Paper, Scissors Game</title>
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <!--scores section-->
+        <section class="scores">
+          <div class="content">
+            <div class="user">
+              <div class="title">User</div>
+              <div class="user-number"></div>
+            </div>
+            <div class="computer">
+              <div class="title">Computer</div>
+              <div class="computer-number"></div>
+            </div>
+          </div>
+        </section>
+        <!--middle section-->
+        <section class="images">
+          <div class="image-content"></div>
+        </section>
+        <!--choices section-->
+        <section class="choices">
+          <div class="choices-content">
+            <div class="first-choice">
+              <div class="rock">
+                <button
+                  class="rock-button"
+                  value="rock"
+                  type="button"
+                  name="rock"
+                >
+                  Rock
+                </button>
+              </div>
+            </div>
+            <div class="second-choice">
+              <div class="paper">
+                <button
+                  class="paper-button"
+                  value="paper"
+                  type="button"
+                  name="paper"
+                >
+                  Paper
+                </button>
+              </div>
+            </div>
+            <div class="third-choice">
+              <div class="scissors">
+                <button
+                  class="scissors-button"
+                  value="scissors"
+                  type="button"
+                  name="scissors"
+                >
+                  Scissors
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="reset-button">
+            <button class="reset" name="reset" type="reset" value="Reset">
+              Reset
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./js/script.js" type="text/javascript"></script>
+  </body>
+</html>
